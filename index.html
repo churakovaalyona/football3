@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Background Color</title>
+    <script>
+        const colors = ['yellow', 'lightgreen', 'blue', 'pink'];
+
+        function changeBackgroundColor() {
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            document.body.style.backgroundColor = randomColor;
+        }
+
+        setInterval(changeBackgroundColor, 5000); // Change color every 5 seconds
+    </script>
+</head>
+<body>
+    <h1>Random Background Color Change</h1>
+    <p>The background color will change every 5 seconds.</p>
+</body>
+</html> 
